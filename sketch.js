@@ -1,14 +1,14 @@
 let totalFrames = 1000;
-let t = 0;
+let t;
 
-let cor1, cor2, verde;
+let cor1 = '#37827B';
+let cor2 = '#2C6AAE';
+let verde = '#37827B';
 
 function setup() {
-createCanvas(windowWidth, windowHeight);
+  createCanvas(800, 800);
   frameRate(60);
-  cor1 = color('#37827B');
-  cor2 = color('#2C6AAE');
-  verde = color('#37827B');
+  smooth();
   noFill();
 }
 
