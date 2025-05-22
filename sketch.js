@@ -4,7 +4,7 @@ let t = 0;
 let cor1, cor2, verde;
 
 function setup() {
-  createCanvas(800, 800);
+createCanvas(windowWidth, windowHeight);
   frameRate(60);
   cor1 = color('#37827B');
   cor2 = color('#2C6AAE');
@@ -135,4 +135,7 @@ function easeOutCubic(x) {
 
 function easeInOutCubic(x) {
   return x < 0.5 ? 4 * x * x * x : 1 - pow(-2 * x + 2, 3) / 2;
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
